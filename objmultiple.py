@@ -66,7 +66,7 @@ while True:
 					cv2.circle(frame, center, 5, (0, 0, 255), -1)
 					pts.appendleft(center)
 					counter = counter+1
-
+				cv2.rectangle(frame, (56,280),(220,395),(0,255,0),3)
 				if(x>56 and x<220 and y>280 and y<395 and radius>10):
 					bg_thread = Thread(target=sound1)
 					bg_thread.start()	
